@@ -41,3 +41,26 @@
             finalMatrix[originalRow] = colDeTransposed[i];
         }
 
+          //Konvertimi ne tekst
+        StringBuilder decrypted = new StringBuilder();
+        for (char[] row : finalMatrix) {
+            for (char c : row) {
+                decrypted.append(c);
+            }
+        }
+
+        return decrypted.toString().replaceAll("X", ""); 
+    }
+
+    //Funksioni per testim
+    public static void main(String[] args) {
+        String encryptedText = "LORDXXLHELOW";
+        int[] rowKey = {1, 0}; 
+        int[] colKey = {2, 0, 1, 3, 4, 5};
+
+        String decrypted = decrypt(encryptedText, rowKey, colKey);
+        System.out.println("Teksti i dekriptuar: " + decrypted);
+    }
+}
+
+
