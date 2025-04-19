@@ -1,5 +1,5 @@
 
-public class RunningKeyDecryptor {
+public class RunningKey {
 
     public String DecryptRunningKey(String cipherText, String Libri) {
         int cipherTextSize = cipherText.length();
