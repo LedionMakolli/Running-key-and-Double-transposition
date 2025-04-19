@@ -3,7 +3,7 @@
 
 public class RunningKey {
 
-    public String EncryptRunningKey(String plainText,String Libri) {
+    public static String EncryptRunningKey(String plainText, String Libri) {
         int plaintTextSize = plainText.length();
         String key = Libri.substring(0,plaintTextSize);
 
