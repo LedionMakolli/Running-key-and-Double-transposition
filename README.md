@@ -12,7 +12,7 @@ Ky projekt përmban tre klaasa Java që implementojnë dy algoritme të dhrymshm
 
 **Double Transposition**  eshte nje metode enkriptimi qe perdor dy nderrime (transpozime) te rreshtave dhe kolonave te nje matrice per te perzier/ngaterruar tekstin e thjeshte (plaintext).
 
-## Karakteristikat
+# Karakteristikat
 
 - Siguria me e larte se Single Transposition sepse perdor dy hapa te pavarur transpozimi (dyfishon kompleksitetin). Nje sulmues qe provon te thyeje enkriptimin duhet te gjeje te dy çelesat, gje qe e ben me te veshtire krahasuar me nje transpozicion te vetem.
 - Perdor dy çelesa:
@@ -26,14 +26,10 @@ Ky projekt përmban tre klaasa Java që implementojnë dy algoritme të dhrymshm
 
 #### Si funksionon
 
- **Hapi 1: Krijimi i Matrices**  
-   - Teksti i thjeshte vendoset ne nje matrice sipas nje çelesi rreshtash.  
- **Hapi 2: Transpozimi i Rreshtave**  
-   - Rreshtat e matrices nderrohen sipas nje çelesi te pare (rowKey).
- **Hapi 3: Transpozimi i Kolonave**  
-   - Kolonat e matrices nderrohen sipas nje çelesi te dyte (colKey).
- **Hapi 3: Leximi i Tekstit të Enkriptuar**  
-   - Teksti merret duke lexuar matricen sipas rendit te ri.
+   - **Hapi 1: Krijimi i Matrices** Teksti i thjeshte vendoset ne nje matrice sipas nje çelesi rreshtash.    
+   - **Hapi 2: Transpozimi i Rreshtave** Rreshtat e matrices nderrohen sipas nje çelesi te pare (rowKey). 
+   - **Hapi 3: Transpozimi i Kolonave** Kolonat e matrices nderrohen sipas nje çelesi te dyte (colKey).  
+   - **Hapi 4: Leximi i Tekstit të Enkriptuar** Teksti merret duke lexuar matricen sipas rendit te ri.
 
 
 #### Shpjegim
