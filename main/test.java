@@ -4,12 +4,29 @@
 public class test {
  //Funksioni per testim-DoubleTranspositionDecryptor
     public static void main(String[] args) {
-        String encryptedText = "LORDXXLHELOW";
-        int[] rowKey = {1, 0}; 
+        System.out.println("Algoritmi Double Transposition");
+        String plaintext = "HELLOWORLD";
+        System.out.println("Teskti para enkriptimit: " + plaintext);
+
+        int[] rowKey = {1, 0};
         int[] colKey = {2, 0, 1, 3, 4, 5};
 
-        String decrypted = decrypt(encryptedText, rowKey, colKey);
+        String encrypted = DoubleTranspositionEncryptor.encrypt(plaintext, rowKey, colKey);
+
+        System.out.println("Teksti i enkriptuar: " + encrypted);
+        String decrypted = DoubleTranspositionDecryptor.decrypt(encrypted, rowKey, colKey);
         System.out.println("Teksti i dekriptuar: " + decrypted);
+
+        System.out.println("Algoritmi Running Key");
+        String plaintxt = "HELLOWORLD";
+        String celesi = "HELLOWORLD";
+        System.out.println("Teksti para enkriptimit: " + plaintxt);
+
+        String encrypted2 = RunningKeyEncrypt.EncryptRunningKey(plaintxt, celesi);
+        System.out.println("Teksti i enkriptuar: " + encrypted2);
+
+        String decrypted2 = RunningKeyDecryptor.DecryptRunningKey(encrypted2, celesi);
+        System.out.println("Teksti i dekriptuar: " + decrypted2);
     }
     }
 

@@ -53,14 +53,4 @@ public class DoubleTranspositionEncryptor {
 
         return encrypted.toString();
     }
-
-    // Funksioni i testimit 
-    public static void main(String[] args) {
-        String plaintext = "HELLOWORLD";
-        int[] rowKey = {1, 0};
-        int[] colKey = {2, 0, 1, 3, 4, 5};
-
-        String encrypted = encrypt(plaintext, rowKey, colKey);
-        System.out.println("Teksti i enkriptuar: " + encrypted);
-    }
 }
