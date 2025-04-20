@@ -64,13 +64,13 @@ Ky projekt përmban tre klaasa Java që implementojnë dy algoritme të dhrymshm
 **Double Transposition Decryptor** - eshte procesi i rikthimit te tekstit te enkriptuar ne gjendjen e tij origjinale(plaintext), duke perdorur dy celesa per te bere transpozimin e kundert te kolonave dhe rreshtave te nje matrice.
 
 ### Karakteristikat
--Dekriptimi eshte i lidhur ngushte me rendin e celesave qe jane perdorur gjate enkriptimit.Per te arritur te teksti origjinal, duhet te njihen 
+- Dekriptimi eshte i lidhur ngushte me rendin e celesave qe jane perdorur gjate enkriptimit.Per te arritur te teksti origjinal, duhet te njihen 
  saktesisht te dy celesat:rowKey - per riorganizimin e rreshatve.
                           colKey - per riorganizimin e kolonave.
--Saktesia e renditjes eshte kritike:Ndryshimi i vetem i nje vlere ne celes do te jape rezultat te gabuar.
--Matricat jane te njejta si gjate enkriptimit, por procesi i zbatimit te celesave ndodh ne rend te kundert per te kthyer teksin ne formen e tij te 
+- Saktesia e renditjes eshte kritike:Ndryshimi i vetem i nje vlere ne celes do te jape rezultat te gabuar.
+- Matricat jane te njejta si gjate enkriptimit, por procesi i zbatimit te celesave ndodh ne rend te kundert per te kthyer teksin ne formen e tij te 
  meparshme.
--Karakteret shtese('X') qe jane perdorur per te plotesuar matricen gjate enkriptimit, hiqen ne fund te procesit te dekriptimit per te ruajtur 
+- Karakteret shtese('X') qe jane perdorur per te plotesuar matricen gjate enkriptimit, hiqen ne fund te procesit te dekriptimit per te ruajtur 
  tekstin origjinal.
 
 #### Si funksionon
