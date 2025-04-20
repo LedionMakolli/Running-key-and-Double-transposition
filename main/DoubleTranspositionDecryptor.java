@@ -1,4 +1,5 @@
-
+public class DoubleTranspositionDecryptor {
+   
    //Krijimi i matrices nga teksti i enkriptuar
     private static char[][] createMatrix(String text, int rows, int cols) {
         char[][] matrix = new char[rows][cols];
@@ -51,6 +52,7 @@
 
         return decrypted.toString().replaceAll("X", ""); 
     }
+}
 
 
 
