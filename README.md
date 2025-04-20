@@ -123,8 +123,16 @@ Transformon një tekst të xakonshëm në teskt te koduar duke përdorur një te
 
 #### Shpjegim
 
+plainText = "HELLO"
 
+Libri = "KEY" → Çelësi i zgjeruar: "KEYKE"
 
+    Teksti (plainText)	H (7)	   E (4)	L (11)	    L (11)	    O (14)
+    Çelësi (KEYKE)	        K (10)	   E (4)        Y (24)	    K (10)	    E (4)
+    Totali	                7+10=17	   4+4=8        11+24=35   11+10=21        14+4=18
+    Mod 26	                17 → 'R'   8 → 'I'	9 → 'J'    21 → 'V'	    18 → 'S'
+
+Rezultati: "RIJVS"
 
 ### Running Key – Dekriptimi
 #### Çka bën?
@@ -149,7 +157,6 @@ Në fund, bashkon të gjitha shkronjat e zbërthyera dhe krijon tekstin origjina
 #### Shpjegim:
 Ky funksion merr tekstin e koduar dhe e zbërthen duke përdorur shkronjat e çelësit si udhëzues për të kuptuar se cilat shkronja origjinale ishin përdorur.
 Ai funksionon edhe nëse shkronjat janë me të vogla ose të mëdha dhe ruan formatin e tyre në përfundim.
-
 
 
 
