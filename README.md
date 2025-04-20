@@ -158,5 +158,16 @@ Në fund, bashkon të gjitha shkronjat e zbërthyera dhe krijon tekstin origjina
 Ky funksion merr tekstin e koduar dhe e zbërthen duke përdorur shkronjat e çelësit si udhëzues për të kuptuar se cilat shkronja origjinale ishin përdorur.
 Ai funksionon edhe nëse shkronjat janë me të vogla ose të mëdha dhe ruan formatin e tyre në përfundim.
 
+plainText = "HELLO" (5 shkronja)
 
+Libri = "KEY" → Çelësi i zgjeruar: "KEYKE"
+
+    Teksti i koduar (cipherText)	R (17)	   I (8)	J (9)	    V (21)	 S (18)
+    Çelësi (KEYKE)	                K (10)	   E (4)	Y (24)      K (10)       E (4)
+    Zbritja                     	17-10=7	   8-4=4	9-24=-15    21-10=11     18-4=14
+    +26 (nëse negativ)	           -         -         -15+26=11	-	    -
+    Mod 26	                        7 → 'H'    4 → 'E'      11 → 'L'    11 → 'L'	 14 → 'O'
+    Rezultati	                      H	      E	           L	       L	    O
+
+Rezultati: "HELLO"
 
