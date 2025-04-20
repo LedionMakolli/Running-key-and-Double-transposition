@@ -22,10 +22,10 @@ public class test {
         String celesi = "HELLOWORLD";
         System.out.println("Teksti para enkriptimit: " + plaintxt);
 
-        String encrypted2 = RunningKeyEncrypt.EncryptRunningKey(plaintxt, celesi);
+        String encrypted2 = RunningKey.Encrypt(plaintxt, celesi);
         System.out.println("Teksti i enkriptuar: " + encrypted2);
 
-        String decrypted2 = RunningKeyDecryptor.DecryptRunningKey(encrypted2, celesi);
+        String decrypted2 = RunningKey.Decrypt(encrypted2, celesi);
         System.out.println("Teksti i dekriptuar: " + decrypted2);
     }
     }
