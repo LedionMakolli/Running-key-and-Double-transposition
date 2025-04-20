@@ -18,7 +18,7 @@ public class test {
         System.out.println("Teksti i dekriptuar: " + decrypted);
 
         System.out.println("Algoritmi Running Key");
-        String plaintxt = "HELLOWORLD";
+        String plaintxt = "Shihemi ne route 66 ne ora 6";
         String celesi = "HELLOWORLD";
         System.out.println("Teksti para enkriptimit: " + plaintxt);
 
