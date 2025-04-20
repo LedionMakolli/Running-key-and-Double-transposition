@@ -1,4 +1,4 @@
-public class DoubleTransposition {
+public class DoubleTranspositionEncryptor {
 
     // Krijimi i matrices
     private static char[][] createMatrix(String text, int rows, int cols) {
