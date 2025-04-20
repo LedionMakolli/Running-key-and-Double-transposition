@@ -73,6 +73,30 @@ Ky projekt përmban tre klaasa Java që implementojnë dy algoritme të dhrymshm
 
 #### Shpjegim
 
+Running Key – Dekriptimi
+Çka bën?
+Dekripton një tekst të koduar duke përdorur metodën "Running Key", ku çelësi është një tekst i gjatë (zakonisht një paragraf ose fjali nga një libër). Ky çelës duhet të jetë të paktën po aq i gjatë sa teksti i enkriptuar.
+
+Si funksionon?
+
+Merr tekstin e koduar dhe një tekst çelës që është të paktën po aq i gjatë sa ai i koduar.
+
+Merr vetëm pjesën e parë të çelësit që ka të njëjtën gjatësi me tekstin e koduar.
+
+Për secilën shkronjë në tekstin e koduar:
+
+Krahason me shkronjën përkatëse nga çelësi.
+
+Llogarit dallimin mes tyre duke përdorur pozicionet në alfabet.
+
+Shkronja që rezulton është pjesë e tekstit të dekriptuar.
+
+Në fund, bashkon të gjitha shkronjat e zbërthyera dhe krijon tekstin origjinal.
+
+Shpjegim:
+Ky funksion merr tekstin e koduar dhe e zbërthen duke përdorur shkronjat e çelësit si udhëzues për të kuptuar se cilat shkronja origjinale ishin përdorur.
+Ai funksionon edhe nëse shkronjat janë me të vogla ose të mëdha dhe ruan formatin e tyre në përfundim.
+
 
 
 
