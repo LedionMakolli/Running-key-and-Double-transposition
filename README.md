@@ -94,7 +94,7 @@ Ky projekt përmban tre klaasa Java që implementojnë dy algoritme të dhrymshm
 
   - **Hapi 3: Nderro rreshtat sipas rowKey={1,0}**
   -  Rreshti 0: H E L L O W
-    - Rreshti 1: O R L D X X
+  -  Rreshti 1: O R L D X X
 
 
   - **Hapi 4: Lexo matricen per ta kthyer ne tekst te dekriptuar**
