@@ -105,15 +105,32 @@ Ky projekt përmban tre klaasa Java që implementojnë dy algoritme të dhrymshm
 
 #### Cka ben?
 
+Transformon një tekst të xakonshëm në teskt te koduar duke përdorur një tekst tjetër si çelës dinamik për secilen shkronjë.
+
 #### Si funksionon
+* Merr tesktin që do të enkriptohet dh një tekst ndihmës (çelësi).
+* Përdoret vetëm aq pjesë nga çelësi sa ka gjatësi teksti origjinal.
+* Për çdo karakter në tesktin që duam t'a enkriptojmë:
+  - Krahasohet me karakterin përkatës nga çelësi.
+  - Vlerat përkatëse kombinohen me mbledhje modulo 26.
+  - Rezultati konvertohet përsëri në karakter.
+* Ruhet formati origjinal i shkronjave (të medha ose të vogla).
+* Të gjitha shkronjat e përpunuara bashkohen për të krijuar tekstin e enkriptuar.
+
+#### Karakteristikat
+- Funksionon me të gjitha kombinimet e shkronjave (të mëdha dhe të vogla).
+- I qëndrueshëm ndaj tentimeve të thjeshta të zbërthimit pa çelësin.
 
 #### Shpjegim
 
-Running Key – Dekriptimi
-Çka bën?
+
+
+
+### Running Key – Dekriptimi
+#### Çka bën?
 Dekripton një tekst të koduar duke përdorur metodën "Running Key", ku çelësi është një tekst i gjatë (zakonisht një paragraf ose fjali nga një libër). Ky çelës duhet të jetë të paktën po aq i gjatë sa teksti i enkriptuar.
 
-Si funksionon?
+#### Si funksionon?
 
 Merr tekstin e koduar dhe një tekst çelës që është të paktën po aq i gjatë sa ai i koduar.
 
@@ -129,7 +146,7 @@ Shkronja që rezulton është pjesë e tekstit të dekriptuar.
 
 Në fund, bashkon të gjitha shkronjat e zbërthyera dhe krijon tekstin origjinal.
 
-Shpjegim:
+#### Shpjegim:
 Ky funksion merr tekstin e koduar dhe e zbërthen duke përdorur shkronjat e çelësit si udhëzues për të kuptuar se cilat shkronja origjinale ishin përdorur.
 Ai funksionon edhe nëse shkronjat janë me të vogla ose të mëdha dhe ruan formatin e tyre në përfundim.
 
