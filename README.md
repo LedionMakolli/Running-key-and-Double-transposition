@@ -61,9 +61,42 @@ Ky projekt përmban tre klaasa Java që implementojnë dy algoritme të dhrymshm
 
 #### Cka ben?
 
+**Double Transposition Decryptor** - eshte procesi i rikthimit te tekstit te enkriptuar ne gjendjen e tij origjinale(plaintext), duke perdorur dy celesa per te bere transpozimin e kundert te kolonave dhe rreshtave te nje matrice.
+
+### Karakteristikat
+-Dekriptimi eshte i lidhur ngushte me rendin e celesave qe jane perdorur gjate enkriptimit.Per te arritur te teksti origjinal, duhet te njihen 
+ saktesisht te dy celesat:rowKey - per riorganizimin e rreshatve.
+                          colKey - per riorganizimin e kolonave.
+-Saktesia e renditjes eshte kritike:Ndryshimi i vetem i nje vlere ne celes do te jape rezultat te gabuar.
+-Matricat jane te njejta si gjate enkriptimit, por procesi i zbatimit te celesave ndodh ne rend te kundert per te kthyer teksin ne formen e tij te 
+ meparshme.
+-Karakteret shtese('X') qe jane perdorur per te plotesuar matricen gjate enkriptimit, hiqen ne fund te procesit te dekriptimit per te ruajtur 
+ tekstin origjinal.
+
 #### Si funksionon
 
+  - **Hapi 1:Krijimi i Matrices nga teksti i enkriptuar**
+  - **Hapi 2:Transpozimi i kundert i kolonave**
+  - **Hapi 3:Transpozimi i kundert i rreshtave**
+  - **Hapi 4:Leximi i tekstit te dekriptuar**
+    
 #### Shpjegim
+
+  - **Hapi 1: Krijimi i matrices**
+    Rreshti 0: L O R D X X
+    Rreshti 1: L H E L O W
+
+  - **Hapi 2: Nderro Kolonat sipas colKey={2,0,1,3,4,5}**
+    Rreshti 0: O R L D X X
+    Rreshti 1: H E L L O W
+
+  - **Hapi 3: Nderro rreshtat sipas rowKey={1,0}**
+    Rreshti 0: H E L L O W
+    Rreshti 1: O R L D X X
+
+  - **Hapi 4: Lexo matricen per ta kthyer ne tekst te dekriptuar**
+    HELLOWORLDXX -> Hiq 'X' -> HELLOWORLD
+
 
 ### Running Key - Enkriptimi
 
