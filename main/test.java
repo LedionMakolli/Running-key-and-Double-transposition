@@ -11,10 +11,10 @@ public class test {
         int[] rowKey = {1, 0};
         int[] colKey = {2, 0, 1, 3, 4, 5};
 
-        String encrypted = DoubleTranspositionEncryptor.encrypt(plaintext, rowKey, colKey);
+        String encrypted = DoubleTransposition.encrypt(plaintext, rowKey, colKey);
 
         System.out.println("Teksti i enkriptuar: " + encrypted);
-        String decrypted = DoubleTranspositionDecryptor.decrypt(encrypted, rowKey, colKey);
+        String decrypted = DoubleTransposition.decrypt(encrypted, rowKey, colKey);
         System.out.println("Teksti i dekriptuar: " + decrypted);
 
         System.out.println("Algoritmi Running Key");

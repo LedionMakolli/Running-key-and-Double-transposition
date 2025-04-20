@@ -1,4 +1,4 @@
-public class DoubleTranspositionEncryptor {
+public class DoubleTransposition {
 
     // Krijimi i matrices
     private static char[][] createMatrix(String text, int rows, int cols) {
@@ -53,4 +53,39 @@ public class DoubleTranspositionEncryptor {
 
         return encrypted.toString();
     }
+
+    // Funksioni i dekriptimit
+    public static String decrypt(String encryptedText, int[] rowKey, int[] colKey) {
+        int rows = rowKey.length;
+        int cols = colKey.length;
+        char[][] matrix = createMatrix(encryptedText, rows, cols);
+
+
+        //Rregullimi i kolonave
+        char[][] colDeTransposed = new char[rows][cols];
+        for (int j = 0; j < cols; j++) {
+            int originalCol = colKey[j];
+            for (int i = 0; i < rows; i++) {
+                colDeTransposed[i][originalCol] = matrix[i][j];
+            }
+        }
+
+        // Rregullon renditjen e rreshtave
+        char[][] finalMatrix = new char[rows][cols];
+        for (int i = 0; i < rows; i++) {
+            int originalRow = rowKey[i];
+            finalMatrix[originalRow] = colDeTransposed[i];
+        }
+
+        //Konvertimi ne tekst
+        StringBuilder decrypted = new StringBuilder();
+        for (char[] row : finalMatrix) {
+            for (char c : row) {
+                decrypted.append(c);
+            }
+        }
+
+        return decrypted.toString().replaceAll("X", "");
+    }
 }
+
