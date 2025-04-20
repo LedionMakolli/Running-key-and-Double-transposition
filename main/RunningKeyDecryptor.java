@@ -1,7 +1,8 @@
 
-public class RunningKey {
+public class RunningKeyDecryptor {
 
-    public String DecryptRunningKey(String cipherText, String Libri) {
+    public static String DecryptRunningKey(String cipherText, String Libri) {
+        cipherText = cipherText.replace(" ","");
         int cipherTextSize = cipherText.length();
         String key = Libri.substring(0, cipherTextSize);
 

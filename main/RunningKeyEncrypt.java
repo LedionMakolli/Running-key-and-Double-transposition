@@ -1,9 +1,9 @@
 
 
-
-public class RunningKey {
+public class RunningKeyEncrypt {
 
     public static String EncryptRunningKey(String plainText, String Libri) {
+        plainText = plainText.replace(" ","");
         int plaintTextSize = plainText.length();
         String key = Libri.substring(0,plaintTextSize);
 
